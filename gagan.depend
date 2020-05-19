@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1588442768 source:c:\my data 1\my data\softwars\c and c++ compiler\c++ projects\gagan\main.cpp
+	<iostream>
+	<fstream>
+	<conio.h>
+	<stdio.h>
+	<iomanip>
+	<cstdio>
+

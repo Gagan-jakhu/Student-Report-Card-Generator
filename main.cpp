@@ -1,3 +1,6 @@
+//
+//***************Header files used in he project*****************
+//
 #include <iostream>
 #include<fstream>
 #include<conio.h>
@@ -5,13 +8,15 @@
 #include<iomanip>
 #include<cstdio>
 using namespace std;
+//******************class used in the project*******************
 class student
 {
+//******************variables used in the class*****************
     int p_marks=0,c_marks=0,m_marks=0,e_marks=0,cs_marks=0,roll=0;
     float per=0;
     char grade;
     char name[50];
-
+//*******************function to calculate percentage and grade***************
     void calculate()
     {
         per=(p_marks+c_marks+m_marks+e_marks+cs_marks)/5.0;
@@ -28,6 +33,7 @@ class student
         else
             grade='F';
     }
+//**********************function to get input from student*****************
 void getdata()
     {
 
@@ -49,6 +55,7 @@ void getdata()
         calculate();
 
     }
+//**************************function to show student data individually*******************
     void showdata()
     {
         cout<<"\n\n\t**************STUDENT DETAILS ARE :- **************";
@@ -63,6 +70,7 @@ void getdata()
         cout<<"\n\n\tPercentage of Student :- "<<per;
     }
 public:
+//***********************function to show class result********************
     void tabular()
     {
         cout<<roll<<"    "<<name<<"          "<<p_marks<<"   "<<c_marks<<"   "<<m_marks<<"   "<<e_marks<<"   "<<cs_marks<<"    "<<per<<"        "<<grade<<endl;
@@ -72,11 +80,11 @@ public:
         return(roll);
     }
 
-    void store_student();
-    void show_student();
-    void search_student(int);
-    void delete_student(int);
-    void update_student(int);
+    void store_student();//function to get student data then store it in a file
+    void show_student();//function to show student data from the file
+    void search_student(int);//function to search student data in the file and then show it
+    void delete_student(int);//function to delete a student record from files
+    void update_student(int);//function to update a student record in the file
 };
 void student::store_student()
 {
@@ -207,7 +215,7 @@ void student::update_student(int n)
     }
 
 }
-int  menu()
+int  menu()//menu function of our program
 {
     int choice;
     cout<<"\n\n\t\tSTUDENT REPORT CARD GENERATOR";
@@ -221,7 +229,7 @@ int  menu()
     cin>>choice;
     return(choice);
 }
-void intro()
+void intro()//intro function of our program to show intro page
 {
 	cout<<"\n\n\n\t\t\t\t      STUDENT";
 	cout<<"\n\n\t\t\t\t    REPORT CARD";

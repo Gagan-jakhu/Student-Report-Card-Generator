@@ -226,11 +226,12 @@ void intro()
 	cout<<"\n\n\n\t\t\t\t      STUDENT";
 	cout<<"\n\n\t\t\t\t    REPORT CARD";
 	cout<<"\n\n\t\t\t\t      PROJECT\n\n\n";
-	cout<<"\n\t\t\t     *************************\n";
-	cout<<"\t       MADE BY :-    *\t\t\t     * \n\t\t\t     *     1.> GAGAN\t     * \n\t\t\t     *     2.> Vikky Garg    *\n\t\t\t     *     3.> Jay kumar     * \n\t\t\t     *     4.> Geeta\t     * ";
+	cout<<"\n\t\t\t     *************************";
+	cout<<"\n\t\t\t     *     \t\t     *\n\t\t\t     *\t  MADE BY :-  GAGAN  *\n\t\t\t     *     \t\t     * ";
     cout<<"\n\t\t\t     *************************";
 	cout<<"\n\t\t\t     *   Branch :- Bio-tech. *";
 	cout<<"\n\t\t\t     *   Year :- second\t     *";
+	cout<<"\n\t\t\t     *   college :- NITJ     *";
 	cout<<"\n\t\t\t     *************************";
 }
 int main()
